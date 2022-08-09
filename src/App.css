@@ -1,38 +1,175 @@
-.App {
+.githubLinkButton {
+  text-decoration: none;
+  color: white;
+  padding: 10px 10px;
+  display: flex;
+  width: 250px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: 0.5s;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  background-image: linear-gradient(
+    to right,
+    #77a1d3 0%,
+    #1bc0e4 51%,
+    #77a1d3 100%
+  );
+}
+
+.seeCodeButton {
+  text-decoration: none;
+  color: white;
+  padding: 10px 10px;
+  display: flex;
+  width: 200px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: 0.5s;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  background-image: linear-gradient(to right, #106b80 51%, #1f3e63 100%);
+}
+
+.githubLinkButton:hover,
+.seeCodeButton:hover {
+  background-position: right center;
+  color: rgb(223, 215, 215);
+  text-decoration: none;
+}
+
+.name {
+  border-bottom: 2px solid #1bc0e4;
+  text-align: center;
+  color: #1bc0e4;
+  margin-bottom: 10px;
+}
+
+.section {
+  border: 2px solid #684c79;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.sectionTitle {
+  margin: 0;
+  font-size: 23px;
+}
+
+.codeDiv {
+  background-color: #242831;
+  border-top: 5px solid #3d4352;
+  margin: 10px 0;
+  padding: 10px;
+  min-height: 100px;
+}
+.codeRunDiv {
+  background-color: #39475a;
+  border-top: 5px solid #723b5d;
+  margin: 10px 0;
+  padding: 10px;
+  min-height: 100px;
+}
+
+.cssComment {
+  color: #13a55a;
+  /* color: #19c26a; */
+}
+.seclector {
+  color: #d7ba7d;
+}
+.cssName {
+  color: #9cdcfe;
+}
+.cssTextvalue {
+  color: #ce8349;
+}
+.cssNumberValue {
+  color: CE8349;
+}
+
+.htmlElement {
+  color: #b94c9e;
+  /* color: #7c496f; */
+}
+.htmlAttribute {
+  color: #19c26a;
+}
+.htmlAttributeValue {
+  /* color: #ecf58a; */
+  color: #cbd36f;
+}
+
+.codeColor4 {
+  color: #a783dc;
+}
+.codeColorWhite {
+  color: white;
+}
+.codeColorComment {
+  color: rgb(126, 114, 114);
+}
+.codeColorComment {
+  color: rgb(126, 114, 114);
+}
+
+.note {
+  color: rgb(124, 177, 0);
+}
+
+.codeAndSitebtn {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  text-decoration: none;
+  background-color: #0082e6;
+  margin: 10px 10px 5px 0;
+  display: inline-block;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* project card */
+.wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.wrapper .card:nth-child(1) {
+  width: 70%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.wrapper .card:nth-child(2) {
+  width: 30%;
+}
+
+.card img {
+  width: 100%;
+  height: 400px;
+}
+
+@media (max-width: 850px) {
+  .wrapper {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .wrapper .card:nth-child(1) {
+    width: 100%;
+  }
+
+  .wrapper .card:nth-child(2) {
+    width: 50%;
+  }
+}
+@media (max-width: 550px) {
+  .wrapper .card:nth-child(1) {
+    width: 100%;
+  }
+
+  .wrapper .card:nth-child(2) {
+    width: 100%;
   }
 }
