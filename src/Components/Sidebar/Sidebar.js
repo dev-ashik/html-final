@@ -28,6 +28,7 @@ const Sidebar = () => {
         <ViewQuiltIcon className={styles.linkIcon} />
         <span className={styles.linkName}>Heading</span>
       </Link>
+      
       {/* C end */}
       {/* D start */}
 
@@ -66,7 +67,10 @@ const Sidebar = () => {
 
       {/* O end */}
       {/* P start */}
-
+      <Link to="/preformate" className={styles.link}>
+        <ViewQuiltIcon className={styles.linkIcon} />
+        <span className={styles.linkName}>preformate</span>
+      </Link>
       {/* P end */}
       {/* Q start */}
 
@@ -78,7 +82,10 @@ const Sidebar = () => {
 
       {/* S end */}
       {/* T start */}
-
+      <Link to="/text-style" className={styles.link}>
+        <ViewQuiltIcon className={styles.linkIcon} />
+        <span className={styles.linkName}>Text Style</span>
+      </Link>
       {/* T end */}
       {/* U start */}
 

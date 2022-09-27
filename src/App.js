@@ -8,6 +8,8 @@ import {
 import Home from './Components/Body/Home/Home';
 import Test from './Components/Body/Test/Test';
 import Heading from './Components/Body/Heading/Heading';
+import Preformate from './Components/Body/Preformate/Preformate';
+import TextStyles from './Components/Body/TextStyles/TextStyles';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
           <Route path="/"  element={<Home/>} />
 
           <Route path="heading"  element={<Heading/>} />
+          <Route path="preformate"  element={<Preformate/>} />
+          <Route path="text-style"  element={<TextStyles/>} />
 
           <Route path="test"  element={<Test/>} />
         </Routes>

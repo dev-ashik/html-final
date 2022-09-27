@@ -1,20 +1,18 @@
-
 .drowerTop {
-    background-color: #33314A;
+  background-color: #33314a;
 }
 
 .sidebar {
-    background-color: #33314A;
+  background-color: #33314a;
 }
 
 .navber {
-    background-color: #22202E !important;
-    border-bottom: 4px solid #413C50;
+  background-color: #22202e !important;
+  border-bottom: 4px solid #413c50;
 }
 
 .body {
-    background-color: #202024;
-    /* background-color: red; */
-    min-height: 800px;
-    color: #C4CAD3;
+  background-color: #202024;
+  min-height: 800px;
+  color: #c4cad3;
 }
